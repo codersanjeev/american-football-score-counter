@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">24sp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="margin0">0dp</dimen>
+    <dimen name="score_size">72sp</dimen>
+    <dimen name="team_name_size">24sp</dimen>
+    <dimen name="padding16">16dp</dimen>
+</resources>

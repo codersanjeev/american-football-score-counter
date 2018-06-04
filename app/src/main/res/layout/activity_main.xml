@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:id="@+id/upperView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="@dimen/margin0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/teamA_score_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/teama"
+                    android:textSize="@dimen/score_size" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding16"
+                    android:paddingBottom="@dimen/margin24"
+                    android:text="@string/teama"
+                    android:textColor="@color/teama"
+                    android:textSize="@dimen/team_name_size" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:layout_marginLeft="@dimen/margin24"
+                    android:layout_marginRight="@dimen/margin24"
+                    android:background="@color/teama"
+                    android:onClick="TeamAtouchdown"
+                    android:text="@string/td" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:layout_marginLeft="@dimen/margin24"
+                    android:layout_marginRight="@dimen/margin24"
+                    android:background="@color/teama"
+                    android:onClick="TeamAfieldgoal"
+                    android:text="@string/fg" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:layout_marginLeft="@dimen/margin24"
+                    android:layout_marginRight="@dimen/margin24"
+                    android:background="@color/teama"
+                    android:onClick="TeamAsafety"
+                    android:text="@string/sf"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/margin0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/teamB_score_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/teamb"
+                    android:textSize="@dimen/score_size" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding16"
+                    android:paddingBottom="@dimen/margin24"
+                    android:text="@string/teamb"
+                    android:textColor="@color/teamb"
+                    android:textSize="@dimen/team_name_size" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:layout_marginLeft="@dimen/margin24"
+                    android:layout_marginRight="@dimen/margin24"
+                    android:background="@color/teamb"
+                    android:onClick="TeamBtouchdown"
+                    android:text="@string/td"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:layout_marginLeft="@dimen/margin24"
+                    android:layout_marginRight="@dimen/margin24"
+                    android:background="@color/teamb"
+                    android:onClick="TeamBfieldgoal"
+                    android:text="@string/fg" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:layout_marginLeft="@dimen/margin24"
+                    android:layout_marginRight="@dimen/margin24"
+                    android:background="@color/teamb"
+                    android:onClick="TeamBsafety"
+                    android:text="@string/sf"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperView"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:onClick="Reset"
+            android:text="@string/reset"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</ScrollView>

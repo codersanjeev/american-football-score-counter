@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AmericanFootballScoreCounter</string>
+    <string name="pat">POINTS AFTER TOUCHDOWN</string>
+    <string name="plusone">+1</string>
+    <string name="plustwo">+2</string>
+    <string name="teama">TEAM A</string>
+    <string name="teamb">TEAM B</string>
+    <string name="td">TOUCHDOWN</string>
+    <string name="fg">FIELD GOAL</string>
+    <string name="sf">SAFETY</string>
+    <string name="reset">RESET</string>
+    <string name="zero">0</string>
+</resources>
